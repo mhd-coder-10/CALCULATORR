@@ -1,0 +1,235 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 1rem 0rem 1rem;
+    font-weight: 900;
+    color: rgb(15, 15, 69);
+}
+
+h1::first-letter {
+    color: red;
+    font-size: 3.8rem;
+}
+
+
+/* ------------------------------ */
+
+.calculator {
+    height: 24rem;
+    width: 20.4rem;
+    border: 0.17rem solid black;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    padding: 1.66rem 0.9rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 1rem rgba(0, 0, 0, 0.4);
+
+}
+
+.display {
+    border: 0.15rem solid black;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4);
+    height: 3rem;
+    border-radius: 0.42rem;
+    padding: 0.3rem 0.66rem 0.3rem 0.3rem;
+    margin: auto;
+    margin-bottom: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    width: 94%;
+    font-size: 2.3rem;
+    text-align: right;
+    font-weight: 660;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.display::placeholder {
+    color: white;
+}
+
+.call {
+    display: flex;
+    height: 2rem;
+    padding: 0.3rem;
+    /* border:0.1rem solid black; */
+    /* border-radius: 0.1rem; */
+    margin: 0.6rem 0rem 0.9rem 0rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.call .fuctional {
+    height: 3.5rem;
+    width: 3.5rem;
+    text-align: center;
+    border: 2px solid black;
+    padding: 0.14rem;
+    background-color: gold;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border-radius: 50%;
+}
+
+#ff2 {
+    background-color: black;
+    color: white;
+    border: 2px solid gold;
+    height: 3.8rem;
+    width: 3.8rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+#ff2:hover {
+    background-color: black;
+    border: 2px solid green;
+
+}
+
+.main {
+    display: flex;
+    height: 13.9rem;
+    margin: 0rem 0.4rem;
+    /* border: 0.1rem solid black; */
+    padding: 0.3rem;
+    margin-top: 1.5rem;
+}
+
+.num {
+    width: 77%;
+    /* border: 1px solid black; */
+    height: 14.7rem;
+    margin-right: 0.1rem;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.n1 {
+    height: 3rem;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.3rem;
+}
+
+.n1-1 {
+    height: 2.87rem;
+    width: 3rem;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+
+.btns {
+    width: 23%;
+    /* border: 1px solid black; */
+    height: 14.7rem;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    height: 3.3rem;
+    width: 3.3rem;
+    border: 0.1rem solid white;
+    padding-bottom: 0.25rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#icn1 {
+    padding-top: 0.5rem;
+}
+
+#icn2 {
+    padding-bottom: 0.5rem;
+}
+
+/* responsive */
+
+@media (max-width:322px) {
+
+    .call-h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-left: -1rem;
+        margin-bottom: 1rem;
+    }
+
+    .call-h1::first-letter {
+        font-size: 2.7rem;
+    }
+
+    .calculator {
+        width: 15rem;
+        margin: 0.5rem;
+        margin-bottom: 2rem;
+        padding: 1.3rem 0.6rem;
+        margin-left: 1rem;
+    }
+
+    .display {
+        padding-right: 0.2rem;
+    }
+
+    .call .fuctional {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .main .num {
+        padding: 0rem;
+        margin-left: -0.48rem;
+    }
+
+    #ff2 {
+        width: 3.3rem;
+        height: 3.3rem;
+        font-size: 1.5rem;
+
+    } 
+
+    .num .n1-1 {
+        width: 2.7rem;
+        height: 2.7rem;
+        font-size: 1.5rem;
+    }
+
+    .btns {
+        margin-right: -0.34rem;
+        margin-top: -0.3rem;
+    }
+
+    .btns .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+}
