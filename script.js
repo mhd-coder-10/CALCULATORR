@@ -11,7 +11,7 @@
     let string = " ";
     
     // Here we can direct btns.forEach();
-    buttonArr.forEach((btn)=> {
+    buttonArr.forEach( (btn) => {
     
         // console.log(btn);  // print all induvidua variable
     
